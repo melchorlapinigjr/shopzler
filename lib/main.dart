@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         designSize: orientation == Orientation.portrait
             ? Size(375, 812)
             : Size(812, 375),
-        builder: () => GetMaterialApp(
+        builder: (context, widget) => GetMaterialApp(
           initialBinding: Binding(),
           theme: ThemeData(
             fontFamily: 'SourceSansPro',
